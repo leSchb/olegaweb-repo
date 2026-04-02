@@ -1,0 +1,60 @@
+.container {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--space-3);
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      span {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.icon {
+  overflow: visible;
+
+  rect,
+  circle {
+    transform-origin: center;
+  }
+
+  rect {
+    position: relative;
+    animation: rectAnimation 2s ease-in-out infinite;
+    z-index: 0;
+  }
+
+  circle {
+    position: relative;
+    animation: circleAnimation 2s ease-in-out infinite;
+    z-index: 1;
+  }
+}
+
+@keyframes rectAnimation {
+  0% {
+    transform: scale(1);
+    fill: rgba(10, 234, 137, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    fill: rgb(2, 255, 145);
+  }
+  100% {
+    transform: scale(1);
+    fill: rgba(10, 234, 137, 0.3);
+  }
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}

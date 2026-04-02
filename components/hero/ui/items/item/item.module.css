@@ -1,0 +1,45 @@
+.container {
+  padding: var(--space-5);
+  border-radius: var(--space-4);
+
+  min-width: 163px;
+  height: 240px;
+
+  grid-column: 2 span;
+  grid-row: 1 span;
+
+  transition: opacity var(--transition);
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.big,
+.mobileBig {
+  grid-column: 4 span;
+}
+
+@media screen and (width <= 1024px) {
+  .big {
+    grid-column: 8 span;
+  }
+
+  .mobileBig {
+    grid-column: 14 span;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .container {
+    grid-column: 7 span;
+    grid-row: 1 span;
+    height: 160px;
+  }
+
+  .mobileBig {
+    grid-column: 14 span;
+  }
+}

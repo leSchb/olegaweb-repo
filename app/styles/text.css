@@ -1,0 +1,53 @@
+.text-heading,
+.heading,
+.bounded {
+  font-family: var(--font-bounded);
+}
+
+.text-body,
+.body-text,
+.onest {
+  font-family: var(--font-onest);
+}
+
+.prewrap {
+  white-space: pre-wrap;
+}
+
+/* colors */
+.black {
+  color: var(--black);
+}
+
+.white {
+  color: var(--white);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+/* sizes */
+.nav-text {
+  font-weight: 400;
+  font-size: 12px;
+
+  @media screen and (width <= 1024px) {
+    font-size: 24px;
+  }
+}
+
+.hero-item-text {
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.693rem + 0.23vw, 0.875rem);
+}
+
+.regular {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: clamp(2rem, 1.545rem + 1.82vw, 3rem);
+}

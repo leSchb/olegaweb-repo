@@ -1,0 +1,11 @@
+.section-container {
+  max-width: var(--container-width);
+  width: 100%;
+
+  padding: 0 var(--space-7);
+  margin: 0 auto;
+
+  @media screen and (width <= 768px) {
+    padding: 0 var(--space-4);
+  }
+}

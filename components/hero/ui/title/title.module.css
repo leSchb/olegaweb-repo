@@ -1,0 +1,15 @@
+.container {
+  gap: var(--space-7);
+
+  @media screen and (width <= 768px) {
+    gap: var(--space-6);
+  }
+}
+
+.accent {
+  @media screen and (any-hover: hover) {
+    &:hover {
+      color: var(--red-main);
+    }
+  }
+}
