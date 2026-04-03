@@ -16,6 +16,7 @@ export default function NumbersCard({ title, text, color, size }: Props) {
 
   return (
     <Container
+      as="li"
       className={classNames(
         `flex-column justify-between`,
         classes.container,
@@ -24,17 +25,12 @@ export default function NumbersCard({ title, text, color, size }: Props) {
       )}
       bgColor={colorMeta.bgColor}
     >
-      <h5
-        className={classNames(
-          `bounded numbers-card-title`,
-          colorMeta.textColor,
-        )}
-      >
+      <h5 className={classNames(`bounded card-title`, colorMeta.textColor)}>
         {title}
       </h5>
       <p
         className={classNames(
-          `onest numbers-card-text`,
+          `onest card-text`,
           colorMeta.subTextColor || colorMeta.textColor,
         )}
       >

@@ -1,6 +1,7 @@
 import { Slot } from "@radix-ui/react-slot";
 import classNames from "classnames";
 
+import classes from "./container.module.css";
 import { ElementType } from "react";
 import { PolymorphicProps } from "~/shared/model";
 
@@ -9,6 +10,7 @@ interface ContainerOwnProps {
   className?: string;
   asChild?: boolean;
   bgColor?: string;
+  needHoverAnimation?: boolean;
 }
 
 export type ContainerProps<T extends ElementType> = PolymorphicProps<
@@ -22,11 +24,19 @@ export default function Container<T extends ElementType = "div">({
   asChild,
   as,
   bgColor = "white",
+  needHoverAnimation = true,
   ...rest
 }: ContainerProps<T>) {
   const Tag = asChild ? Slot : as || "div";
   return (
-    <Tag className={classNames(className, `bg-${bgColor}`)} {...rest}>
+    <Tag
+      className={classNames(
+        className,
+        `bg-${bgColor}`,
+        needHoverAnimation && classes.hoverAnimation,
+      )}
+      {...rest}
+    >
       {children}
     </Tag>
   );

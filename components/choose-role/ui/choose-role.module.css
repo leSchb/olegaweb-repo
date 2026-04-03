@@ -1,0 +1,9 @@
+.container {
+    flex-direction: row;
+    gap: var(--space-5);
+
+    @media screen and (width <= 1024px) {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+}

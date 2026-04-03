@@ -1,0 +1,27 @@
+.container {
+  padding: var(--space-6);
+  border-radius: var(--space-4);
+
+  min-height: 280px;
+  flex: 1 1;
+}
+
+.default {
+  max-width: 291px;
+}
+
+@media screen and (width <= 1024px) {
+  .default {
+    max-width: unset;
+  }
+
+  .container {
+    min-height: 243px;
+  }
+}
+
+@media screen and (width <= 560px) {
+  .container {
+    min-height: 143px;
+  }
+}
