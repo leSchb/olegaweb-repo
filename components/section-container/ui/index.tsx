@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { ContainerProps } from "~/shared/components/container/ui";
 import { ElementType } from "react";
 
-type Props<T extends ElementType> = ContainerProps<T>;
+export type SectionContainerProps<T extends ElementType> = ContainerProps<T>;
 
 export default function SectionContainer<T extends ElementType>({
   children,
@@ -12,7 +12,7 @@ export default function SectionContainer<T extends ElementType>({
   asChild,
   as,
   ...rest
-}: Props<T>) {
+}: SectionContainerProps<T>) {
   const Tag = asChild ? Root : as || "section";
 
   return (
