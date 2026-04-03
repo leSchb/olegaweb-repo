@@ -1,0 +1,49 @@
+.container {
+  padding: var(--space-7);
+  border-radius: var(--space-4);
+
+  grid-column: 2 span;
+  width: 100%;
+  height: 100%;
+  min-width: 240px;
+
+  transition: opacity var(--transition);
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  @media screen and (width <= 768px) {
+    padding: var(--space-5);
+  }
+}
+
+.small {
+  grid-row: 1 span;
+  height: 150px;
+}
+
+.big {
+  grid-row: 2 span;
+  max-height: 190px;
+}
+
+.large {
+  grid-row: 3 span;
+  max-height: 360px;
+}
+
+.border {
+  outline: 1px solid var(--light-gray);
+
+  transition: outline var(--transition);
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      outline: 1px solid var(--red-main);
+      opacity: 1;
+    }
+  }
+}

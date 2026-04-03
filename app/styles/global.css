@@ -9,3 +9,46 @@
     padding: 0 var(--space-4);
   }
 }
+
+/* scrollbar */
+.scrollbar {
+  scrollbar-width: 1px;
+
+  &::-webkit-scrollbar-thumb {
+    width: 1px;
+    background-color: var(--red-main);
+  }
+
+  &::-webkit-scrollbar-button {
+    background-color: var(--black);
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+/* bg-colors */
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-red-main {
+  background-color: var(--red-main);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}

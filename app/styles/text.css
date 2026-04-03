@@ -27,6 +27,10 @@
   color: var(--gray);
 }
 
+.red-main {
+  color: var(--red-main);
+}
+
 /* sizes */
 .nav-text {
   font-weight: 400;
@@ -44,6 +48,16 @@
   @media screen and (width <= 768px) {
     text-transform: lowercase;
   }
+}
+
+.numbers-card-title {
+  font-size: clamp(1.125rem, 0.955rem + 0.68vw, 1.5rem);
+  font-weight: 700;
+}
+
+.numbers-card-text {
+  font-size: clamp(0.75rem, 0.636rem + 0.45vw, 1rem);
+  font-weight: 400;
 }
 
 .hero-item-text {

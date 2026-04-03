@@ -1,0 +1,14 @@
+.wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.list {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: var(--space-5);
+
+  padding-top: 1px;
+  max-height: 361px;
+  height: 100%;
+}

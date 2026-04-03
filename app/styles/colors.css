@@ -2,23 +2,8 @@
   --white: #ffffff;
   --black: #121212;
   --gray: #929292;
+  --text-gray: #636363;
   --light-gray: #f4f4f4;
 
   --red-main: #ea0a23;
-}
-
-.bg-white {
-  background-color: var(--white);
-}
-
-.bg-red-main {
-  background-color: var(--red-main);
-}
-
-.bg-light-gray {
-  background-color: var(--light-gray);
-}
-
-.bg-black {
-  background-color: var(--black);
 }
