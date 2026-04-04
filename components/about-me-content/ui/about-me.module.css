@@ -1,0 +1,20 @@
+.container {
+  flex-direction: row;
+
+  @media screen and (width <= 1024px) {
+    flex-direction: column;
+  }
+}
+
+.content,
+.container {
+  gap: var(--space-5);
+
+  @media screen and (width <= 768px) {
+    gap: var(--space-3);
+  }
+}
+
+.content {
+    flex: 1;
+}

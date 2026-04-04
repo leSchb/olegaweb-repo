@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={classNames(...layoutFonts)}>
-      <body className="flex-column">
+    <html lang="en" className={classNames(...layoutFonts, "scrollbar")}>
+      <body className="flex-column scrollbar">
         <ClientRootLayout>{children}</ClientRootLayout>
       </body>
     </html>

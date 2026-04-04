@@ -1,0 +1,12 @@
+.container {
+  height: 220px;
+  min-width: 240px;
+  flex: 1 0;
+
+  padding: var(--space-5);
+  border-radius: var(--space-4);
+
+  @media screen and (width <= 768px) {
+    max-width: 240px;
+  }
+}

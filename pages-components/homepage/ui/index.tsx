@@ -5,6 +5,7 @@ import HeroSection from "~/components/hero/ui";
 import NumbersContent from "~/components/numbers-content/ui";
 import ChooseRoleContent from "~/components/choose-role/ui";
 import CasesContent from "~/components/cases-content/ui";
+import AboutMeContent from "~/components/about-me-content/ui";
 
 interface ISection {
   title: string;
@@ -28,6 +29,11 @@ export default function HomePage() {
       title: "Избранные кейсы",
       content: <CasesContent />,
       id: "cases",
+    },
+    {
+      title: "Обо мне",
+      content: <AboutMeContent />,
+      id: "about-me",
     },
   ];
 

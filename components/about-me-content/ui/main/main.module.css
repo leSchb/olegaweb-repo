@@ -1,0 +1,15 @@
+.container {
+  gap: var(--space-8);
+  padding: var(--space-7);
+  border-radius: var(--space-4);
+
+  width: 100%;
+  min-height: 460px;
+
+  @media screen and (width <= 768px) {
+    gap: var(--space-6);
+    padding: var(--space-5);
+
+    min-height: unset;
+  }
+}

@@ -1,0 +1,21 @@
+.image {
+  max-width: 395px;
+  max-height: 360px;
+  flex: 1 0;
+  height: auto;
+
+  border-radius: var(--space-4);
+  overflow: hidden;
+
+  position: sticky;
+  top: 0;
+
+  @media screen and (width <= 1024px) {
+    position: static;
+    align-self: center;
+  }
+
+  @media screen and (width <= 560px) {
+    max-height: 215px;
+  }
+}

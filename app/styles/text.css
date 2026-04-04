@@ -14,6 +14,10 @@
   white-space: pre-wrap;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 /* colors */
 .black {
   color: var(--black);
@@ -83,6 +87,14 @@
 .card-subtitle {
   font-size: clamp(0.875rem, 0.818rem + 0.23vw, 1rem);
   font-weight: 700;
+}
+
+.text-16-12 {
+  font-size: clamp(0.75rem, 0.636rem + 0.45vw, 1rem);
+}
+
+.text-14 {
+  font-size: 14px;
 }
 
 .regular {
