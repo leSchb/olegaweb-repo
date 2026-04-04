@@ -1,0 +1,75 @@
+.container {
+  padding: var(--space-6);
+  border-radius: var(--space-4);
+  min-width: 300px;
+
+  @media screen and (width <= 768px) {
+    padding: var(--space-5);
+    min-width: 240px;
+  }
+}
+
+.default {
+  grid-column: 3 span;
+  grid-row: 1 span;
+}
+
+.big {
+  grid-column: 6 span;
+  grid-row: 1 span;
+}
+
+.large {
+  grid-column: 6 span;
+  grid-row: 2 span;
+}
+
+@media screen and (width <= 1024px) {
+  .default,
+  .big,
+  .large {
+    grid-column: 3 span;
+    grid-row: 2 span;
+  }
+}
+
+.image {
+  max-width: 60px;
+  max-height: 60px;
+
+  @media screen and (width <= 768px) {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+.manyImages {
+  max-width: 120px;
+  max-height: 60px;
+
+  @media screen and (width <= 768px) {
+    max-width: 80px;
+    max-height: 40px;
+  }
+}
+
+.link {
+  position: absolute;
+  top: var(--space-6);
+  right: var(--space-6);
+
+  @media screen and (width <= 768px) {
+    top: var(--space-5);
+    right: var(--space-5);
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      svg {
+        path {
+          fill: var(--black);
+        }
+      }
+    }
+  }
+}

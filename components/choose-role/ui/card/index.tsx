@@ -28,7 +28,7 @@ export default function ChooseRoleCard({
       <div className="flex-column gap-2">
         <h5
           className={classNames(
-            "choose-role-title bounded",
+            "card-subtitle bounded",
             color === "black" && "white",
           )}
         >

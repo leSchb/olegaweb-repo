@@ -4,6 +4,7 @@ import SectionWithTitle from "~/components/section-with-title/ui";
 import HeroSection from "~/components/hero/ui";
 import NumbersContent from "~/components/numbers-content/ui";
 import ChooseRoleContent from "~/components/choose-role/ui";
+import CasesContent from "~/components/cases-content/ui";
 
 interface ISection {
   title: string;
@@ -22,6 +23,11 @@ export default function HomePage() {
       title: "Выберите героя",
       content: <ChooseRoleContent />,
       id: "choose-role",
+    },
+    {
+      title: "Избранные кейсы",
+      content: <CasesContent />,
+      id: "cases",
     },
   ];
 

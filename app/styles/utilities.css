@@ -96,3 +96,16 @@
 .cursor-default {
   cursor: default;
 }
+
+/* positions */
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}

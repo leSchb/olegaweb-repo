@@ -1,0 +1,24 @@
+.wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.container {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--space-5);
+  min-height: 500px;
+  width: 100%;
+
+  position: relative;
+  z-index: 1;
+
+  @media screen and (width <= 1024px) {
+    min-height: 420px;
+  }
+
+  @media screen and (width <= 768px) {
+    gap: var(--space-3);
+    min-height: 360px;
+  }
+}
