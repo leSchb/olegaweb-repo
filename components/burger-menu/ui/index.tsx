@@ -32,7 +32,7 @@ export default function BurgerMenu({ isOpened, onClose }: Props) {
           <h2 className="white bounded text-28">Меню</h2>
           <NavComponent onLinkClick={onClose} />
         </div>
-        <div className="flex-row justify-between gap-4">
+        <div className="flex-row justify-between gap-4 align-center">
           <AvailableNotification />
           <Point1 className="flex-1" />
         </div>

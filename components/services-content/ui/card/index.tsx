@@ -42,7 +42,7 @@ export default function ServicesCard({
         <p className={`self-center onest text-16-12 ${colorMeta.text.default}`}>
           сроки — <span className="bold">{deadline}</span>
         </p>
-        <Button bgColor={colorMeta.button.bgColor} className={classes.button}>
+        <Button as={"a"} href="#contacts" bgColor={colorMeta.button.bgColor} className={classes.button}>
           <span
             className={`bounded medium text-14-12 ${colorMeta.button.textColor}`}
           >
