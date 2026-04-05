@@ -18,7 +18,7 @@
     background-color var(--fast-transition);
 
   @media screen and (width <= 768px) {
-   padding: var(--space-1);
+   padding: var(--space-1) var(--space-2);
   }
 
   @media screen and (any-hover: hover) {

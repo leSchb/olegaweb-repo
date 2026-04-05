@@ -4,7 +4,9 @@ import { workProccessCards } from "../model";
 
 export default function WorkProccessContent() {
   return (
-    <ul className={`flex-row mandatory-x-container ${classes.container}`}>
+    <ul
+      className={`flex-row mandatory-x-container scrollbar ${classes.container}`}
+    >
       {workProccessCards.map((item, index) => (
         <WorkProccessCard key={item.title + index} {...item} />
       ))}

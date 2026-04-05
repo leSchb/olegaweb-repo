@@ -5,7 +5,7 @@ import { reviewsCards } from "../model";
 
 export default function ReviewsContent() {
   return (
-    <ul className={`flex-row mandatory-x-container ${classes.container}`}>
+    <ul className={`flex-row mandatory-x-container scrollbar ${classes.container}`}>
       <ReviewsLink />
       {reviewsCards.map((item, index) => (
         <ReviewsCard key={item.name + index} {...item} />
