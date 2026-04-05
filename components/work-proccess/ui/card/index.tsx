@@ -14,7 +14,7 @@ export default function WorkProccessCard({
     <li className={`flex-row mandatory-x-item ${classes.container}`}>
       <Container
         bgColor="light-gray"
-        className={`flex-column jusitfy-between gap-4 ${classes.content}`}
+        className={`flex-column justify-between gap-4 ${classes.content}`}
       >
         <div className={classes.icon}>
           <Icon />
