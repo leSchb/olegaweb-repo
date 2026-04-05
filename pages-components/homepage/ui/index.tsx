@@ -6,6 +6,7 @@ import NumbersContent from "~/components/numbers-content/ui";
 import ChooseRoleContent from "~/components/choose-role/ui";
 import CasesContent from "~/components/cases-content/ui";
 import AboutMeContent from "~/components/about-me-content/ui";
+import ServicesContent from "~/components/services-content/ui";
 
 interface ISection {
   title: string;
@@ -34,6 +35,11 @@ export default function HomePage() {
       title: "Обо мне",
       content: <AboutMeContent />,
       id: "about-me",
+    },
+    {
+      title: "Услуги",
+      content: <ServicesContent />,
+      id: "#services",
     },
   ];
 

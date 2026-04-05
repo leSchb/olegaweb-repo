@@ -1,0 +1,33 @@
+.container {
+  grid-column: 4 span;
+  grid-row: 2 span;
+
+  padding: var(--space-5);
+  border-radius: var(--space-4);
+
+  @media screen and (width <= 1024px) {
+    grid-row: 1 span;
+
+    &:not(:last-of-type) {
+      grid-column: 6 span;
+    }
+
+    &:last-of-type {
+      grid-column: 12 span;
+    }
+  }
+
+  @media screen and (width <= 768px) {
+    grid-column: 12 span !important;
+    grid-row: 2 span;
+  }
+}
+
+.content {
+  gap: var(--space-6);
+}
+
+.button {
+  padding: var(--space-3);
+  border-radius: var(--space-3);
+}

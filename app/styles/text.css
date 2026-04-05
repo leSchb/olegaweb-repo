@@ -18,6 +18,10 @@
   white-space: nowrap;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 /* colors */
 .black {
   color: var(--black);
@@ -87,6 +91,10 @@
 .card-subtitle {
   font-size: clamp(0.875rem, 0.818rem + 0.23vw, 1rem);
   font-weight: 700;
+}
+
+.text-20-16 {
+  font-size: clamp(1rem, 0.886rem + 0.45vw, 1.25rem);
 }
 
 .text-16-12 {

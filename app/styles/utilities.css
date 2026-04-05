@@ -20,6 +20,10 @@
   align-items: flex-start;
 }
 
+.self-center {
+  align-self: center;
+}
+
 /* grid */
 .grid {
   display: grid;
@@ -90,6 +94,10 @@
 
 .gap-5 {
   gap: var(--space-5);
+}
+
+.gap-6 {
+  gap: var(--space-6);
 }
 
 /* cursors */

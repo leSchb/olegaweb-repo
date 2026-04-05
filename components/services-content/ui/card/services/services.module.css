@@ -1,0 +1,5 @@
+.item {
+  padding: var(--space-4);
+  gap: var(--space-10px);
+  border-radius: var(--space-3);
+}

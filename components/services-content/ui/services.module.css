@@ -1,0 +1,9 @@
+.container {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--space-5);
+
+  @media screen and (width <= 768px) {
+    gap: var(--space-3);
+  }
+}
