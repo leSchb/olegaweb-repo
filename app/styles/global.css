@@ -50,7 +50,7 @@
 
 .scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--red-scrollbar);
-  border-radius: 50%;
+  border-radius: var(--space-10px);
   transition: background-color var(--fast-transition);
 }
 
