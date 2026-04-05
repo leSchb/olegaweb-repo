@@ -4,7 +4,7 @@ export const chooseRoleCards: IChooseRoleCard[] = [
   {
     title: "Клиент",
     text: "есть задача и нужен понятный, аккуратный дизайн без лишней суеты",
-    linkHref: "#",
+    linkHref: "#services",
     linkText: "Смотреть услуги",
     size: "big",
     color: "light-gray",
@@ -12,7 +12,7 @@ export const chooseRoleCards: IChooseRoleCard[] = [
   {
     title: "HR / рекрутер",
     text: "ищете дизайнера, который быстро вольется в команду",
-    linkHref: "#",
+    linkHref: "#!",
     linkText: "Открыть резюме на hh",
     size: "default",
     color: "black",
