@@ -19,6 +19,7 @@
   --space-11: 44px;
   --space-12: 48px;
   --space-50px: 50px;
+  --space-60px: 60px;
   --space-80px: 80px;
   --space-100px: 100px;
 
@@ -26,4 +27,5 @@
   --transition: 0.5s ease-in-out;
 
   --z-medium: 500;
+  --z-high: 1000;
 }

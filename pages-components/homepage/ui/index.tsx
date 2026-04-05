@@ -7,6 +7,8 @@ import ChooseRoleContent from "~/components/choose-role/ui";
 import CasesContent from "~/components/cases-content/ui";
 import AboutMeContent from "~/components/about-me-content/ui";
 import ServicesContent from "~/components/services-content/ui";
+import ReviewsContent from "~/components/reviews/ui";
+import WorkProccessContent from "~/components/work-proccess/ui";
 
 interface ISection {
   title: string;
@@ -39,7 +41,17 @@ export default function HomePage() {
     {
       title: "Услуги",
       content: <ServicesContent />,
-      id: "#services",
+      id: "services",
+    },
+    {
+      title: "Отзывы",
+      content: <ReviewsContent />,
+      id: "reviews",
+    },
+    {
+      title: "Рабочий процесс",
+      content: <WorkProccessContent />,
+      id: "work-proccess",
     },
   ];
 

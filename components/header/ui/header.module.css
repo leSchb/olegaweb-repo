@@ -5,6 +5,9 @@
   position: sticky;
   top: 0;
   z-index: var(--z-medium);
+
+  transform: translateY(0);
+  transition: transform var(--transition);
 }
 
 .image {
@@ -16,5 +19,13 @@
     &:hover {
       opacity: 0.6;
     }
+  }
+}
+
+.actions {
+  display: flex;
+
+  @media screen and (width <= 1024px) {
+    display: none;
   }
 }

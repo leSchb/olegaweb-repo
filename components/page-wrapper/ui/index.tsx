@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Footer from "~/components/footer/ui";
 import Header from "~/components/header/ui";
 
 interface Props {
@@ -16,6 +17,7 @@ export default function PageWrapper({
     <>
       <Header needNav={needHeaderNav} />
       <main className={classNames(className, "flex-column")}>{children}</main>
+      <Footer />
     </>
   );
 }

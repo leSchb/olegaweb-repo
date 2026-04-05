@@ -21,4 +21,8 @@
       font-size: 14px;
     }
   }
+
+  @media screen and (width <= 1024px) {
+    color: var(--white) !important;
+  }
 }

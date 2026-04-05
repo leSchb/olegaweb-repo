@@ -13,10 +13,21 @@
 
   opacity: 0.6;
 
-  transition: opacity var(--fast-transition);
+  transition:
+    background-color var(--fast-transition),
+    opacity var(--fast-transition);
+  span {
+    transition: color var(--fast-transition);
+  }
+
   @media screen and (any-hover: hover) {
     &:hover {
       opacity: 1;
+      background-color: var(--black);
+
+      span {
+        color: var(--white) !important;
+      }
     }
   }
 }

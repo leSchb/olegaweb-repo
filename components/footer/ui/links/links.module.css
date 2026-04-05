@@ -1,0 +1,18 @@
+.container {
+  flex-direction: row;
+  width: 100%;
+
+  @media screen and (width <= 768px) {
+    flex-direction: column;
+  }
+}
+
+.link {
+  padding: var(--space-5);
+  border-radius: var(--space-4);
+  flex: 1;
+
+  @media screen and (width <= 768px) {
+    padding: var(--space-3) var(--space-5);
+  }
+}

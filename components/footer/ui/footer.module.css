@@ -1,0 +1,21 @@
+.container {
+  padding: var(--space-7);
+  padding-top: var(--space-10);
+
+  @media screen and (width <= 768px) {
+    padding: var(--space-4);
+    padding-top: var(--space-30px);
+  }
+}
+
+.content {
+  flex: 1;
+  padding: var(--space-10);
+  gap: calc(var(--space-10) * 2);
+  border-radius: var(--space-5);
+
+  @media screen and (width <= 768px) {
+    padding: var(--space-5);
+    gap: var(--space-60px);
+  }
+}

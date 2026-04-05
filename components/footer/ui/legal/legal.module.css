@@ -1,0 +1,17 @@
+.container {
+  flex-direction: row;
+
+  @media screen and (width <= 768px) {
+    flex-direction: column;
+  }
+}
+
+.icon {
+  @media screen and (width <= 768px) {
+    align-self: flex-end;
+  }
+}
+
+.text {
+    opacity: 0.6;
+}

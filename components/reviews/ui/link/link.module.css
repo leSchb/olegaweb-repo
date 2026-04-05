@@ -1,0 +1,22 @@
+.container {
+  padding: var(--space-5);
+  border-radius: var(--space-4);
+  flex: 1 0;
+  min-width: 240px;
+}
+
+.link {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      svg {
+        path {
+          fill: var(--white);
+        }
+      }
+    }
+  }
+}

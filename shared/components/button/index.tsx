@@ -5,12 +5,18 @@ import Container from "../container/ui";
 import { ElementType } from "react";
 import { ContainerProps } from "../container/ui";
 
-type Props<T extends ElementType> = ContainerProps<T> & {
+type Props<T extends ElementType, RefT extends HTMLElement> = ContainerProps<
+  T,
+  RefT
+> & {
   activeScale?: boolean;
   justifyCenter?: boolean;
 };
 
-export default function Button<T extends ElementType>({
+export default function Button<
+  T extends ElementType,
+  RefT extends HTMLElement,
+>({
   activeScale = false,
   justifyCenter = true,
   children,
@@ -18,7 +24,7 @@ export default function Button<T extends ElementType>({
   as,
   className,
   ...rest
-}: Props<T>) {
+}: Props<T, RefT>) {
   return (
     <Container
       bgColor={bgColor}
@@ -29,7 +35,7 @@ export default function Button<T extends ElementType>({
         className,
       )}
       as={as || "button"}
-      {...(rest as ContainerProps<T>)}
+      {...(rest as ContainerProps<T, RefT>)}
     >
       {children}
     </Container>

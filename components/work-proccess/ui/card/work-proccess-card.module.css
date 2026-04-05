@@ -1,0 +1,40 @@
+.container {
+  gap: var(--space-4);
+  flex: 1 0;
+
+  @media screen and (width <= 768px) {
+    gap: var(--space-3);
+  }
+}
+
+.content {
+  height: 200px;
+  padding: var(--space-5);
+  border-radius: var(--space-5);
+  width: 100%;
+  min-width: 180px;
+}
+
+.icon {
+  padding: var(--space-2);
+  border-radius: var(--space-3);
+  background-color: var(--red-main-01);
+  align-self: flex-start;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.text {
+  gap: var(--space-2);
+
+  @media screen and (width <= 768px) {
+    gap: var(--space-6px);
+  }
+}
+
+.postIcon {
+  align-self: center;
+  width: max-content;
+  min-width: 14px;
+  min-height: 14px;
+}

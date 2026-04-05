@@ -1,0 +1,6 @@
+.container {
+  padding: var(--space-5);
+  border-radius: var(--space-4);
+  flex: 1 0;
+  min-width: 240px;
+}

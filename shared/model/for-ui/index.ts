@@ -10,3 +10,5 @@ export type ILinkItem = {
   href: string;
   blank?: boolean;
 };
+
+export type SvgType = React.FC<React.SVGProps<React.SVGElementType>>;

@@ -7,7 +7,7 @@ export const navItems: INavItem[] = [
   },
   {
     title: "Обо мне",
-    href: "#about",
+    href: "#about-me",
   },
   {
     title: "Услуги",

@@ -5,19 +5,20 @@ import SectionContainer from "~/components/section-container/ui";
 import { ElementType } from "react";
 import { SectionContainerProps } from "~/components/section-container/ui";
 
-type Props<T extends ElementType> = SectionContainerProps<T> & {
+type Props<
+  T extends ElementType,
+  RefT extends HTMLElement,
+> = SectionContainerProps<T, RefT> & {
   title: string;
 };
 
-export default function SectionWithTitle<T extends ElementType>({
-  children,
-  title,
-  className,
-  ...props
-}: Props<T>) {
+export default function SectionWithTitle<
+  T extends ElementType,
+  RefT extends HTMLElement,
+>({ children, title, className, ...props }: Props<T, RefT>) {
   return (
     <SectionContainer
-      {...(props as SectionContainerProps<T>)}
+      {...(props as SectionContainerProps<T, RefT>)}
       className={classNames(
         className,
         "flex-column section-container",

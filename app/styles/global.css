@@ -4,10 +4,21 @@
 
   padding: 0 var(--space-7);
   margin: 0 auto;
+  
+  /* 55px - height of header */
+  scroll-margin-top: 55px;
 
   @media screen and (width <= 768px) {
     padding: 0 var(--space-4);
   }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.header--hidden {
+  transform: translateY(-100%) !important;
 }
 
 .mandatory-x-container {

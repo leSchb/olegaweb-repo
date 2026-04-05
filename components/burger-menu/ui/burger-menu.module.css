@@ -1,0 +1,36 @@
+.wrapper {
+  inset: 0;
+
+  padding: var(--space-10);
+  min-width: 100dvw;
+  min-height: 100dvh;
+
+  transition-property: border-radius, translate, rotate;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+  border-radius: 0 0 30% 50%;
+  z-index: var(--z-high);
+
+  &.closed {
+    translate: -100% -100%;
+    rotate: -45deg;
+    pointer-events: none;
+  }
+
+  &.opened {
+    border-radius: 0 0 0 0;
+    rotate: 0deg;
+    translate: 0 0;
+    pointer-events: all;
+  }
+}
+
+.container {
+  height: 100%;
+  gap: var(--space-10);
+}
+
+.content {
+  gap: 8dvh;
+}

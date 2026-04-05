@@ -18,6 +18,11 @@
   white-space: nowrap;
 }
 
+/* weights */
+.medium {
+  font-weight: 500;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -93,6 +98,18 @@
   font-weight: 700;
 }
 
+.text-36-24 {
+  font-size: clamp(1.5rem, 1.159rem + 1.36vw, 2.25rem);
+}
+
+.text-28 {
+  font-size: 28px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
 .text-20-16 {
   font-size: clamp(1rem, 0.886rem + 0.45vw, 1.25rem);
 }
@@ -101,8 +118,16 @@
   font-size: clamp(0.75rem, 0.636rem + 0.45vw, 1rem);
 }
 
+.text-14-12 {
+  font-size: clamp(0.75rem, 0.693rem + 0.23vw, 0.875rem);
+}
+
 .text-14 {
   font-size: 14px;
+}
+
+.text-12 {
+  font-size: 12px;
 }
 
 .regular {
