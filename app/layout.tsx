@@ -20,7 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={classNames(...layoutFonts, "scrollbar")}>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={classNames(...layoutFonts, "scrollbar")}
+    >
       <body className="flex-column scrollbar">
         <ClientRootLayout>{children}</ClientRootLayout>
       </body>

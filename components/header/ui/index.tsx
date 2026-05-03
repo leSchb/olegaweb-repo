@@ -14,9 +14,13 @@ import BurgerMenu from "~/components/burger-menu/ui";
 
 interface Props {
   needNav?: boolean;
+  burgerDefaultDisplayed?: boolean;
 }
 
-export default function Header({ needNav = true }: Props) {
+export default function Header({
+  needNav = true,
+  burgerDefaultDisplayed = false,
+}: Props) {
   const { headerRef } = useHeader();
   const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
