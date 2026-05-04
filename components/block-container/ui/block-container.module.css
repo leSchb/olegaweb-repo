@@ -1,0 +1,10 @@
+.redBorder {
+  transition: outline var(--transition);
+  outline: 1px solid var(--light-gray);
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      outline: 1px solid var(--red-main);
+    }
+  }
+}

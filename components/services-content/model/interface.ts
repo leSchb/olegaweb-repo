@@ -1,30 +1,11 @@
-export interface IServicesColor {
-  bgColor: string;
-  blockColor: string;
-  button: {
-    bgColor: string;
-    textColor: string;
-  };
-  text: {
-    default: string;
-    subtitle: string;
-  };
-}
-
-export type ServicesCardColor = "white" | "black" | "red";
-
-export type ServicesColorMeta = Record<ServicesCardColor, IServicesColor>;
+import { IBlockContainer } from "~/components/block-container/model/interface";
 
 export interface IServicesService {
   title: string;
   price: string;
 }
 
-export interface IServicesCard {
-  title: string;
-  subtitle: string;
+export interface IServicesCard extends IBlockContainer {
   services: IServicesService[];
   deadline: string;
-  buttonText: string;
-  color: ServicesCardColor;
 }

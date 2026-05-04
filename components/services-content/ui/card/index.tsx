@@ -1,55 +1,39 @@
+import classNames from "classnames";
+
 import classes from "./services-card.module.css";
-import Container from "~/shared/components/container/ui";
 import ServicesCardServices from "./services";
-import Button from "~/shared/components/button";
+import BlockContainer from "~/components/block-container/ui";
 import { IServicesCard } from "../../model";
-import { servicesColorsMeta } from "../../model/const";
+import { blockContainerColorsMeta } from "~/components/block-container/model";
 
-type Props = IServicesCard;
+type Props = {
+  cardData: IServicesCard;
+};
 
-export default function ServicesCard({
-  title,
-  subtitle,
-  services,
-  deadline,
-  buttonText,
-  color,
-}: Props) {
-  const colorMeta = servicesColorsMeta[color];
+export default function ServicesCard({ cardData }: Props) {
+  const colorMeta = blockContainerColorsMeta[cardData.color];
+  const { services, deadline } = cardData;
   return (
-    <Container
-      as="li"
+    <BlockContainer
+      {...cardData}
       className={`flex-column justify-between gap-6 ${classes.container}`}
-      bgColor={colorMeta.bgColor}
-      needHoverAnimation={false}
-    >
-      <div className={`flex-column gap-6`}>
-        <div className="flex-column gap-3">
-          <h5 className={`bounded bold text-20-16 ${colorMeta.text.default}`}>
-            {title}
-          </h5>
-          <p className={`onest text-16-12 ${colorMeta.text.subtitle}`}>
-            {subtitle}
-          </p>
-        </div>
-        <ServicesCardServices
-          textColor={colorMeta.text.default}
-          cardColor={colorMeta.blockColor}
-          services={services}
-        />
-      </div>
-      <div className="flex-column gap-4">
-        <p className={`self-center onest text-16-12 ${colorMeta.text.default}`}>
+      buttonClassName={classes.button}
+      aboveButton={
+        <p
+          className={classNames(
+            `self-center onest text-16-12`,
+            colorMeta.text?.default || "white",
+          )}
+        >
           сроки — <span className="bold">{deadline}</span>
         </p>
-        <Button as={"a"} href="#contacts" bgColor={colorMeta.button.bgColor} className={classes.button}>
-          <span
-            className={`bounded medium text-14-12 ${colorMeta.button.textColor}`}
-          >
-            {buttonText}
-          </span>
-        </Button>
-      </div>
-    </Container>
+      }
+    >
+      <ServicesCardServices
+        textColor={colorMeta.text?.default || "white"}
+        cardColor={colorMeta.blockColor}
+        services={services}
+      />
+    </BlockContainer>
   );
 }

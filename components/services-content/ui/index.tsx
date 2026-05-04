@@ -6,7 +6,7 @@ export default function ServicesContent() {
   return (
     <ul className={`grid ${classes.container}`}>
       {servicesCards.map((item, index) => (
-        <ServicesCard key={item.color + index} {...item} />
+        <ServicesCard key={item.color + index} cardData={item} />
       ))}
     </ul>
   );

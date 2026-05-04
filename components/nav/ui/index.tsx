@@ -4,13 +4,12 @@ import classNames from "classnames";
 
 import classes from "./nav.module.css";
 import Link from "next/link";
-import { navItems } from "../model";
-import { ILinkItem } from "~/shared/model";
+import { INavItem, navItems } from "../model";
 
 interface Props {
   className?: string;
   onLinkClick?: () => void;
-  items?: ILinkItem[];
+  items?: INavItem[];
 }
 
 export default function NavComponent({ className, onLinkClick, items }: Props) {
