@@ -32,7 +32,11 @@ export default function BlockContainer({
   return (
     <Container
       as={as || "div"}
-      className={classNames("flex", className, color === "redBorder" && classes.redBorder)}
+      className={classNames(
+        "flex",
+        className,
+        color === "redBorder" && classes.redBorder,
+      )}
       bgColor={colorMeta.bgColor}
       needHoverAnimation={false}
     >

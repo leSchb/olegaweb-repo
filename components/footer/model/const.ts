@@ -7,12 +7,12 @@ export const footerLinks: IFooterLink[] = [
   {
     value: "Вконтакте",
     Icon: Vk,
-    href: "",
+    href: "https://vk.com/olega123",
   },
   {
     value: "Телеграм",
     Icon: Tg,
-    href: "",
+    href: "https://t.me/olegaweb",
   },
   {
     value: "+7 (918) 088-46-35",

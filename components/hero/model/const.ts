@@ -21,7 +21,7 @@ export const heroItems: IHeroItem[] = [
   {
     Icon: IconDownload,
     title: "Скачать \nрезюме",
-    href: "#",
+    href: "https://drive.google.com/uc?export=download&id=1NjnmIgrbD0ENz2Fhovj55J_Q19mT6TBE",
     big: true,
     bgColor: "black",
     textColor: "white",
@@ -29,7 +29,7 @@ export const heroItems: IHeroItem[] = [
   {
     Icon: IconLink,
     title: "Смотреть \nкейсы",
-    href: "#",
+    href: "#cases",
     mobileBig: true,
     bgColor: "red-main",
     textColor: "white",

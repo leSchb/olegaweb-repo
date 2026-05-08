@@ -23,7 +23,7 @@ export const blockContainerColorsMeta: BlockContainerColorMeta = {
     text: {
       default: "black",
       subtitle: "gray",
-    }
+    },
   },
   black: {
     bgColor: "black",

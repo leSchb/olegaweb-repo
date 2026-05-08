@@ -1,0 +1,13 @@
+.container {
+    gap: var(--space-7);
+
+    @media screen and (width <= 1024px) {
+        gap: var(--space-6);
+    }
+}
+
+.bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--space-4);
+}

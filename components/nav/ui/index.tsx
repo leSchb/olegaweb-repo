@@ -13,8 +13,11 @@ interface Props {
 }
 
 export default function NavComponent({ className, onLinkClick, items }: Props) {
-  const itemsToMap = useMemo(() => Array.isArray(items) ? items : navItems, [items]);
-  
+  const itemsToMap = useMemo(
+    () => (Array.isArray(items) ? items : navItems),
+    [items],
+  );
+
   return (
     <nav className={classNames(`flex`, classes.container, className)}>
       {itemsToMap.map((item, index) => (

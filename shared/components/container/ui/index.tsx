@@ -9,7 +9,7 @@ interface ContainerOwnProps<RefT extends HTMLElement> {
   children: React.ReactNode;
   className?: string;
   asChild?: boolean;
-  bgColor?: string;
+  bgColor?: string | null;
   needHoverAnimation?: boolean;
   ref?: RefObject<RefT | null>;
 }
@@ -36,7 +36,7 @@ export default function Container<
     <Tag
       className={classNames(
         className,
-        `bg-${bgColor}`,
+        bgColor && `bg-${bgColor}`,
         needHoverAnimation && classes.hoverAnimation,
       )}
       {...rest}

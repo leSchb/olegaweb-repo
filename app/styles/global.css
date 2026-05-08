@@ -4,7 +4,7 @@
 
   padding: 0 var(--space-7);
   margin: 0 auto;
-  
+
   /* 55px - height of header */
   scroll-margin-top: 55px;
 
@@ -67,6 +67,10 @@
 
 .bg-red-main {
   background-color: var(--red-main);
+}
+
+.bg-red-main-01 {
+  background-color: var(--red-main-01);
 }
 
 .bg-light-gray {

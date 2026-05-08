@@ -18,10 +18,7 @@ interface Props {
   navItems?: INavItem[];
 }
 
-export default function Header({
-  needNav = true,
-  navItems,
-}: Props) {
+export default function Header({ needNav = true, navItems }: Props) {
   const { headerRef } = useHeader();
   const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
