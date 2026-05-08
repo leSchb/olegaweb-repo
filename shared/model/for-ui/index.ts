@@ -19,3 +19,5 @@ export interface IImage {
   width?: number;
   height?: number;
 }
+
+export type RecordKeyType = string | number | symbol;

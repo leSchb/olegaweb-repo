@@ -25,12 +25,12 @@
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+}
 
-  .mandatory-x-item {
-    scroll-snap-align: center;
-    flex-shrink: 0;
-    width: 100%;
-  }
+.mandatory-x-item {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 /* scrollbar */
@@ -57,6 +57,14 @@
 @media (any-hover: hover) {
   .scrollbar:hover::-webkit-scrollbar-thumb {
     background-color: color-mix(in srgb, var(--red-scrollbar), black 20%);
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 

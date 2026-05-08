@@ -1,7 +1,0 @@
-.container {
-    margin-top: var(--space-9);
-
-    @media screen and (width <= 1024px) {
-        margin-top: var(--space-8);        
-    }
-}

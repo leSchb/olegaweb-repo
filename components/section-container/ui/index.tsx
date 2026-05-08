@@ -17,6 +17,7 @@ export default function SectionContainer<
   className,
   asChild,
   as,
+  bgColor,
   ref,
   ...rest
 }: SectionContainerProps<T, RefT>) {
@@ -24,7 +25,11 @@ export default function SectionContainer<
 
   return (
     <Tag
-      className={classNames(`section-container`, className)}
+      className={classNames(
+        `section-container`,
+        className,
+        bgColor && `bg-${bgColor}`,
+      )}
       ref={ref}
       {...rest}
     >
