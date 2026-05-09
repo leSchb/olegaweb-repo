@@ -14,6 +14,7 @@ type Props = IBlockContainer & {
   aboveButton?: React.ReactNode;
   buttonClassName?: string;
   className?: string;
+  titleClassName?: string;
   as?: React.ElementType;
 };
 
@@ -26,6 +27,7 @@ export default function BlockContainer({
   aboveButton,
   buttonClassName,
   className,
+  titleClassName,
   as,
 }: Props) {
   const colorMeta = blockContainerColorsMeta[color];
@@ -35,7 +37,8 @@ export default function BlockContainer({
       className={classNames(
         "flex",
         className,
-        color === "redBorder" && classes.redBorder,
+        (color === "redBorder" || color === "redBorderAlt") &&
+          classes.redBorder,
       )}
       bgColor={colorMeta.bgColor}
       needHoverAnimation={false}
@@ -46,6 +49,7 @@ export default function BlockContainer({
             title={title}
             subtitle={subtitle}
             textColor={colorMeta.text}
+            className={titleClassName}
           />
           {children}
         </div>
@@ -54,6 +58,7 @@ export default function BlockContainer({
           title={title}
           subtitle={subtitle}
           textColor={colorMeta.text}
+          className={titleClassName}
         />
       )}
       {button &&

@@ -1,4 +1,5 @@
-.redBorder {
+.redBorder,
+.redBorderAlt {
   transition: outline var(--transition);
   outline: 1px solid var(--light-gray);
 

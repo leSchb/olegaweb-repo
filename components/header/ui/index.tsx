@@ -47,7 +47,11 @@ export default function Header({ needNav = true, navItems }: Props) {
         </div>
         <HeaderMenuButton onClick={() => setMenuOpened(!menuOpened)} />
       </SectionContainer>
-      <BurgerMenu isOpened={menuOpened} onClose={() => setMenuOpened(false)} />
+      <BurgerMenu
+        isOpened={menuOpened}
+        onClose={() => setMenuOpened(false)}
+        navItems={navItems}
+      />
     </>
   );
 }

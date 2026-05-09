@@ -1,0 +1,7 @@
+.role {
+  padding: var(--space-10) var(--space-7);
+
+  @media screen and (width <= 1024px) {
+    padding: var(--space-30px) var(--space-4);
+  }
+}

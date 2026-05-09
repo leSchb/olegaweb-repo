@@ -25,6 +25,18 @@ export const blockContainerColorsMeta: BlockContainerColorMeta = {
       subtitle: "gray",
     },
   },
+  redBorderAlt: {
+    bgColor: "white",
+    blockColor: "light-gray",
+    button: {
+      bgColor: "red-main",
+      textColor: "white",
+    },
+    text: {
+      default: "red-main",
+      subtitle: "red-main",
+    },
+  },
   black: {
     bgColor: "black",
     blockColor: "white-1",

@@ -10,7 +10,12 @@ export interface IBlockContainer {
   color: BlockContainerColor;
 }
 
-export type BlockContainerColor = "white" | "black" | "red" | "redBorder";
+export type BlockContainerColor =
+  | "white"
+  | "black"
+  | "red"
+  | "redBorder"
+  | "redBorderAlt";
 
 export interface IBlockContainerTextColor {
   default: string;
