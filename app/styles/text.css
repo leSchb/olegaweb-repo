@@ -44,6 +44,14 @@
   color: var(--text-dark-gray);
 }
 
+.text-gray {
+  color: var(--text-gray);
+}
+
+.light-gray {
+  color: var(--light-gray);
+}
+
 .red-main {
   color: var(--red-main);
 }
@@ -98,6 +106,10 @@
   font-weight: 700;
 }
 
+.text-48-32 {
+  font-size: clamp(2rem, 1.545rem + 1.82vw, 3rem);
+}
+
 .text-36-24 {
   font-size: clamp(1.5rem, 1.159rem + 1.36vw, 2.25rem);
 }
@@ -112,6 +124,14 @@
 
 .text-20-16 {
   font-size: clamp(1rem, 0.886rem + 0.45vw, 1.25rem);
+}
+
+.text-20-14 {
+  font-size: clamp(0.875rem, 0.705rem + 0.68vw, 1.25rem);
+}
+
+.text-16 {
+  font-size: 16px;
 }
 
 .text-16-12 {

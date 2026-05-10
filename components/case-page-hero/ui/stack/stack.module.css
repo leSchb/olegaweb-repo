@@ -1,0 +1,21 @@
+.container {
+  align-self: flex-end;
+  gap: var(--space-3);
+
+  @media screen and (width <= 1024px) {
+    gap: var(--space-2);
+  }
+}
+
+.image {
+  max-width: 40px;
+  max-height: 40px;
+
+  border-radius: var(--space-10px);
+
+  @media screen and (width <= 560px) {
+    max-width: 28px;
+    max-height: 28px;
+    border-radius: var(--space-2);
+  }
+}

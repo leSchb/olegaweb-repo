@@ -12,7 +12,8 @@ export const chooseRoleCards: IChooseRoleCard[] = [
   {
     title: "HR / рекрутер",
     text: "ищете дизайнера, который быстро вольется в команду",
-    linkHref: "#!",
+    linkHref:
+      "https://krasnodar.hh.ru/resume/c3f0470dff103ed60e0039ed1f7641685a6137",
     linkText: "Открыть резюме на hh",
     size: "default",
     color: "black",

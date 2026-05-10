@@ -1,0 +1,19 @@
+.container {
+  gap: var(--space-6);
+
+  @media screen and (width <= 1024px) {
+    gap: var(--space-4);
+  }
+}
+
+.title {
+  @media screen and (width <= 1024px) {
+    text-transform: lowercase;
+  }
+}
+
+.br {
+  @media screen and (width <= 1024px) {
+    display: none;
+  }
+}

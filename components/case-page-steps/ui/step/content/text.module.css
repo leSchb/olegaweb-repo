@@ -1,0 +1,24 @@
+.wrapper {
+  gap: var(--space-4);
+  align-items: flex-start;
+
+  @media screen and (width <= 1024px) {
+    gap: var(--space-3);
+  }
+}
+
+.container {
+  gap: var(--space-7);
+
+  @media screen and (width <= 1024px) {
+    gap: var(--space-4);
+  }
+}
+
+.textRows {
+  gap: var(--space-6);
+
+  @media screen and (width <= 1024px) {
+    gap: var(--space-4);
+  }
+}

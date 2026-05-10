@@ -11,16 +11,14 @@ import NavComponent from "~/components/nav/ui";
 import SectionContainer from "~/components/section-container/ui";
 import HeaderMenuButton from "./menu-button";
 import BurgerMenu from "~/components/burger-menu/ui";
+import { INavItem } from "~/components/nav/model";
 
 interface Props {
   needNav?: boolean;
-  burgerDefaultDisplayed?: boolean;
+  navItems?: INavItem[];
 }
 
-export default function Header({
-  needNav = true,
-  burgerDefaultDisplayed = false,
-}: Props) {
+export default function Header({ needNav = true, navItems }: Props) {
   const { headerRef } = useHeader();
   const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
@@ -44,12 +42,16 @@ export default function Header({
           />
         </Link>
         <div className={`flex-row align-center gap-5 ${classes.actions}`}>
-          {needNav && <NavComponent className={classes.nav} />}
+          {needNav && <NavComponent className={classes.nav} items={navItems} />}
           <AvailableNotification className={classes.available} />
         </div>
         <HeaderMenuButton onClick={() => setMenuOpened(!menuOpened)} />
       </SectionContainer>
-      <BurgerMenu isOpened={menuOpened} onClose={() => setMenuOpened(false)} />
+      <BurgerMenu
+        isOpened={menuOpened}
+        onClose={() => setMenuOpened(false)}
+        navItems={navItems}
+      />
     </>
   );
 }

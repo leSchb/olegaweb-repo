@@ -1,0 +1,5 @@
+.container {
+    gap: var(--screens-carousel-gap, var(--space-3));
+    scroll-behavior: auto;
+    overflow-x: auto;
+}

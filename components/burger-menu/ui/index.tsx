@@ -8,13 +8,15 @@ import Container from "~/shared/components/container/ui";
 import BurgerTwoPoints from "./two-points";
 import NavComponent from "~/components/nav/ui";
 import AvailableNotification from "~/components/available-notification/ui";
+import { INavItem } from "~/components/nav/model";
 
 interface Props {
   isOpened: boolean;
   onClose: () => void;
+  navItems?: INavItem[];
 }
 
-export default function BurgerMenu({ isOpened, onClose }: Props) {
+export default function BurgerMenu({ isOpened, onClose, navItems }: Props) {
   useBurgerMenu({ isOpened });
 
   return (
@@ -30,7 +32,7 @@ export default function BurgerMenu({ isOpened, onClose }: Props) {
         <div className={`flex-column ${classes.content}`}>
           <BurgerTwoPoints onClose={onClose} />
           <h2 className="white bounded text-28">Меню</h2>
-          <NavComponent onLinkClick={onClose} />
+          <NavComponent onLinkClick={onClose} items={navItems} />
         </div>
         <div className="flex-row justify-between gap-4 align-center">
           <AvailableNotification />

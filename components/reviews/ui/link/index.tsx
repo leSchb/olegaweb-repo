@@ -12,7 +12,7 @@ export default function ReviewsLink() {
       className={`flex-column justify-between flex-1 relative mandatory-x-item ${classes.container}`}
     >
       <a
-        href="#!"
+        href="https://profi.ru/profile/ZhavoronkaOY"
         className={classes.link}
         target="_blank"
         rel="noopener noreferrer"

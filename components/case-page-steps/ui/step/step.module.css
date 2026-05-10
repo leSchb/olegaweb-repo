@@ -1,0 +1,21 @@
+.container {
+  flex-direction: row;
+  gap: var(--space-80px);
+
+  @media screen and (width <= 1024px) {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+}
+
+.image {
+  max-width: 824px;
+  max-height: 515px;
+
+  border-radius: var(--space-4);
+
+  @media screen and (width <= 1024px) {
+    max-width: 100%;
+    max-height: unset;
+  }
+}

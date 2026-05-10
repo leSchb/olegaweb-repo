@@ -1,0 +1,33 @@
+.red {
+  rect,
+  path,
+  circle {
+    fill: var(--red-main);
+    transition: fill var(--transition);
+  }
+
+  @media screen and (any-hover: hover) {
+    rect,
+    path,
+    circle {
+      fill: var(--red-main-pale);
+    }
+  }
+}
+
+.black {
+  rect,
+  path,
+  circle {
+    fill: var(--black);
+    transition: fill var(--transition);
+  }
+
+  @media screen and (any-hover: hover) {
+    rect,
+    path,
+    circle {
+      fill: var(--text-dark-gray);
+    }
+  }
+}

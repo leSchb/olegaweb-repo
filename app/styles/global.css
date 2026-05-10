@@ -4,7 +4,7 @@
 
   padding: 0 var(--space-7);
   margin: 0 auto;
-  
+
   /* 55px - height of header */
   scroll-margin-top: 55px;
 
@@ -25,12 +25,12 @@
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+}
 
-  .mandatory-x-item {
-    scroll-snap-align: center;
-    flex-shrink: 0;
-    width: 100%;
-  }
+.mandatory-x-item {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 /* scrollbar */
@@ -60,6 +60,14 @@
   }
 }
 
+.no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /* bg-colors */
 .bg-white {
   background-color: var(--white);
@@ -67,6 +75,10 @@
 
 .bg-red-main {
   background-color: var(--red-main);
+}
+
+.bg-red-main-01 {
+  background-color: var(--red-main-01);
 }
 
 .bg-light-gray {

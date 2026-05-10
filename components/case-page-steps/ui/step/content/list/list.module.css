@@ -1,0 +1,23 @@
+.container {
+  gap: var(--space-3);
+
+  @media screen and (width <= 1024px) {
+    gap: var(--space-2);
+  }
+}
+
+.item {
+  gap: var(--space-3);
+  
+  @media screen and (width <= 1024px) {
+    gap: var(--space-2);
+  }
+}
+
+.marker {
+  width: 10px;
+  height: 10px;
+
+  background-color: var(--red-main);
+  border-radius: 50%;
+}

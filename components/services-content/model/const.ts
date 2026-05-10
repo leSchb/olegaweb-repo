@@ -1,43 +1,4 @@
-import { IServicesCard, ServicesColorMeta } from "./interface";
-
-export const servicesColorsMeta: ServicesColorMeta = {
-  white: {
-    bgColor: "light-gray",
-    blockColor: "black-05",
-    button: {
-      bgColor: "black",
-      textColor: "white",
-    },
-    text: {
-      default: "black",
-      subtitle: "gray",
-    },
-  },
-  black: {
-    bgColor: "black",
-    blockColor: "white-1",
-    button: {
-      bgColor: "red-main",
-      textColor: "white",
-    },
-    text: {
-      default: "white",
-      subtitle: "white",
-    },
-  },
-  red: {
-    bgColor: "red-main",
-    blockColor: "white-2",
-    button: {
-      bgColor: "white",
-      textColor: "black",
-    },
-    text: {
-      default: "white",
-      subtitle: "white",
-    },
-  },
-};
+import { IServicesCard } from "./interface";
 
 export const servicesCards: IServicesCard[] = [
   {
@@ -58,7 +19,10 @@ export const servicesCards: IServicesCard[] = [
       },
     ],
     deadline: "18-30 дней",
-    buttonText: "Обсудить лендинг",
+    button: {
+      text: "Обсудить лендинг",
+      href: "#contacts",
+    },
     color: "white",
   },
   {
@@ -75,7 +39,10 @@ export const servicesCards: IServicesCard[] = [
       },
     ],
     deadline: "30-90 дней",
-    buttonText: "Обсудить проект",
+    button: {
+      text: "Обсудить проект",
+      href: "#contacts",
+    },
     color: "black",
   },
   {
@@ -92,7 +59,10 @@ export const servicesCards: IServicesCard[] = [
       },
     ],
     deadline: "30-90 дней",
-    buttonText: "Обсудить проект",
+    button: {
+      text: "Обсудить проект",
+      href: "#contacts",
+    },
     color: "red",
   },
 ];

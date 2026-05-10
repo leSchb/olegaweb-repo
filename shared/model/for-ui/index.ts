@@ -12,3 +12,12 @@ export type ILinkItem = {
 };
 
 export type SvgType = React.FC<React.SVGProps<React.SVGElementType>>;
+
+export interface IImage {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
+export type RecordKeyType = string | number | symbol;
