@@ -5,3 +5,11 @@
     padding: var(--space-30px) var(--space-4);
   }
 }
+
+.step {
+  padding: var(--space-10) 0;
+
+  @media screen and (width <= 1024px) {
+    padding: var(--space-30px) 0;
+  }
+}
