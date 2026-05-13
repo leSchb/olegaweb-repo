@@ -9,43 +9,53 @@ import { RecordKeyType, SvgType } from "~/shared/model";
 interface Props<T extends RecordKeyType> extends IScreensCarouselItem<T> {
   iconsMap: Record<T, SvgType>;
   className?: string;
+  imageDir?: string;
+  imageSize?: {
+    width: number;
+    height: number;
+  };
 }
 
 export default function ScreensCarouselItem<T extends RecordKeyType>({
   image,
-  title,
-  text,
-  icon,
+  card,
   iconsMap,
   className,
+  imageDir = "/myaudza/carousel/",
+  imageSize = { width: 416, height: 260 },
 }: Props<T>) {
-  const Icon = iconsMap[icon as T] as unknown as SvgType;
+  const Icon = iconsMap[card?.icon as T] as unknown as SvgType;
 
   return (
     <>
-      <Container
-        bgColor={"light-gray"}
-        className={classNames(
-          `flex-column justify-between gap-4 mandatory-x-item`,
-          classes.container,
-          className,
-        )}
-        role="listitem"
-      >
-        <Icon className={classes.icon} />
-        <div className="flex-column gap-2">
-          <h2 className="bounded black text-12">{title}</h2>
-          <p className="bounded text-12 text-gray">{text}</p>
-        </div>
-      </Container>
+      {card && (
+        <Container
+          bgColor={"light-gray"}
+          className={classNames(
+            `flex-column justify-between gap-4 mandatory-x-item`,
+            classes.container,
+            className,
+          )}
+          role="listitem"
+        >
+          {Icon && <Icon className={classes.icon} />}
+          <div className="flex-column gap-2">
+            <h2 className="bounded black text-12">{card.title}</h2>
+            <p className="bounded text-12 text-gray">{card.text}</p>
+          </div>
+        </Container>
+      )}
 
       <Image
-        src={`/myaudza/carousel/${image}.png`}
+        src={`${imageDir}${image}.png`}
         alt={""}
-        width={416}
-        height={260}
         className={`${classes.image} mandatory-x-item`}
         role="listitem"
+        style={{
+          maxWidth: imageSize.width,
+          maxHeight: imageSize.height,
+        }}
+        {...imageSize}
       />
     </>
   );

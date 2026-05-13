@@ -1,0 +1,21 @@
+.hero {
+  padding: var(--space-10);
+  border-radius: var(--space-6);
+
+  @media screen and (width <= 1024px) {
+    padding: var(--space-5);
+  }
+}
+
+.heroButton {
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--space-2);
+
+  @media screen and (width <= 1024px) {
+    padding: var(--space-2) var(--space-5);
+  }
+}
+
+.screens {
+  padding: var(--space-4) 0;
+}

@@ -12,6 +12,7 @@ type Props = ICaseHero & {
   className?: string;
   buttonClassName?: string;
   stackClassName?: string;
+  stackButton?: React.ReactNode;
 };
 
 export default function CasePageHero({
@@ -23,6 +24,7 @@ export default function CasePageHero({
   className,
   buttonClassName,
   stackClassName,
+  stackButton,
 }: Props) {
   return (
     <SectionContainer
@@ -33,7 +35,11 @@ export default function CasePageHero({
       <p className="onest text-16 black">{role}</p>
       <div className={classNames("flex", classes.bottom)}>
         <CaseButton {...button} className={buttonClassName} />
-        <CaseStack stack={stack} className={stackClassName} />
+        <CaseStack
+          stack={stack}
+          className={stackClassName}
+          button={stackButton}
+        />
       </div>
     </SectionContainer>
   );

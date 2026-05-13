@@ -27,6 +27,7 @@ export const casesCards: ICasesCard[] = [
     title: "Лэндинги",
     text: "коммерческие сайты и e-commerce",
     size: "default",
+    linkHref: "/landings",
     manyImages: true,
   },
 ];

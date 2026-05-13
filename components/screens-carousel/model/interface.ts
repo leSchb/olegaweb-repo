@@ -1,8 +1,10 @@
 export interface IScreensCarouselItem<
   IconType extends string | number | symbol,
 > {
-  title: string;
-  text: string;
+  card?: {
+    title: string;
+    text: string;
+    icon: IconType;
+  };
   image: string;
-  icon: IconType;
 }

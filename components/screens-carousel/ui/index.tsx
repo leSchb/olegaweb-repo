@@ -12,6 +12,11 @@ interface Props<IconType extends RecordKeyType> {
   className?: string;
   itemClassName?: string;
   iconsMap: Record<IconType, SvgType>;
+  imagesDir?: string;
+  imageSize?: {
+    width: number;
+    height: number;
+  };
 }
 
 export default function ScreensCarousel<IconType extends RecordKeyType>({
@@ -19,6 +24,8 @@ export default function ScreensCarousel<IconType extends RecordKeyType>({
   className,
   itemClassName,
   iconsMap,
+  imagesDir,
+  imageSize,
 }: Props<IconType>) {
   const { startAnimation, stopAnimation, containerRef } = useScreensCarousel();
   return (
@@ -36,17 +43,21 @@ export default function ScreensCarousel<IconType extends RecordKeyType>({
       {items.map((item, index) => (
         <ScreensCarouselItem
           {...item}
-          key={item.title + index}
+          key={item.image + index}
           className={itemClassName}
           iconsMap={iconsMap}
+          imageDir={imagesDir}
+          imageSize={imageSize}
         />
       ))}
       {items.map((item, index) => (
         <ScreensCarouselItem
           {...item}
-          key={item.title + index + "duplicate"}
+          key={item.image + index + "duplicate"}
           className={itemClassName}
           iconsMap={iconsMap}
+          imageDir={imagesDir}
+          imageSize={imageSize}
         />
       ))}
     </div>
